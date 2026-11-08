@@ -78,14 +78,16 @@
   .photo img { width: 100%; height: 100%; object-fit: cover; display: block; }
   .photo p { margin-top: 12px; font-family: 'Dancing Script', cursive; font-size: 1.3rem; color: var(--pink-700); }
 
-  /* reasons */
-  .reasons { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 20px; }
-  .reason {
-    background: #fff; border-radius: 20px; padding: 28px 18px; border: 2px dashed var(--pink-400);
-    transition: transform .3s;
+  /* behaviour cards */
+  .traits { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 24px; }
+  .trait {
+    background: #fff; border-radius: 22px; padding: 30px 24px; border: 2px dashed var(--pink-400);
+    box-shadow: 0 8px 22px rgba(255,92,157,.15); transition: transform .3s, box-shadow .3s;
   }
-  .reason:hover { transform: translateY(-8px); }
-  .reason .icon { font-size: 2.2rem; display: block; margin-bottom: 10px; }
+  .trait:hover { transform: translateY(-8px); box-shadow: 0 14px 30px rgba(255,92,157,.28); }
+  .trait .icon { font-size: 2.2rem; display: block; margin-bottom: 10px; }
+  .trait h3 { font-family: 'Dancing Script', cursive; font-size: 1.7rem; color: var(--pink-700); margin-bottom: 10px; }
+  .trait p { font-size: .95rem; line-height: 1.8; font-weight: 300; }
 
   /* song */
   .player {
@@ -132,28 +134,55 @@
   <div class="gallery">
     <!-- Replace each emoji with: <img src="your-photo.jpg" alt="memory"> -->
    
-    <div class="photo"><div class="frame"><img src="IMG_20261107_112522_345.jpg" alt=""></div><p>Memory two</p></div>
-    <div class="photo"><div class="frame"><img src="IMG_20261107_112522_385.jpg" alt=""></div><p>Memory three</p></div>
-    <div class="photo"><div class="frame"><img src="IMG_20261107_112522_494.jpg" alt=""></div><p>Memory four</p></div>
-    <div class="photo"><div class="frame"><img src="IMG_20261107_112522_506.jpg" alt=""></div><p>Memory five</p></div>
-    <div class="photo"><div class="frame"><img src="IMG_20261107_112522_670.jpg" alt=""></div><p>Memory six</p></div>
-    <div class="photo"><div class="frame"><img src="IMG_20261107_112522_734.jpg" alt=""></div><p>Memory seven</p></div>
-    <div class="photo"><div class="frame"><img src="IMG_20261107_112522_821.jpg" alt=""></div><p>Memory eight</p></div>
-    <div class="photo"><div class="frame"><img src="IMG_20261107_112522_868.jpg" alt=""></div><p>Memory nine</p></div>
-    <div class="photo"><div class="frame"><img src="IMG_20261107_112523_012.jpg" alt=""></div><p>Memory ten</p></div>
+    <div class="photo"><div class="frame"><img src="IMG_20261107_112522_385.jpg" alt=""></div><p>An extraordinary combination of beauty, wisdom, and faith — beautifully created by God, 
+      intellectually gifted, and destined to shine</p></div>
+    <div class="photo"><div class="frame"><img src="IMG_20261107_112522_494.jpg" alt=""></div><p>A rare combination of beauty, intelligence, kindness, and modesty.”</p></div>
+    <div class="photo"><div class="frame"><img src="IMG_20261107_112522_506.jpg" alt=""></div><p>Your beauty is a blessing that words cannot describe.</p></div>
+    <div class="photo"><div class="frame"><img src="IMG_20261107_112522_670.jpg" alt=""></div><p>Your beauty shines brighter than words can describe.</p></div>
+    <div class="photo"><div class="frame"><img src="IMG_20261107_112522_734.jpg" alt=""></div><p>You shine through your achievements but remain grounded through your humility.</p></div>
+    <div class="photo"><div class="frame"><img src="IMG_20261107_112522_821.jpg" alt=""></div><p>You carry the light of 
+      Christ wherever you go</p></div>
+    <div class="photo"><div class="frame"><img src="IMG_20261107_112522_868.jpg" alt=""></div><p>A woman of strong faith.</p></div>
+    <div class="photo"><div class="frame"><img src="IMG_20261107_112523_012.jpg" alt=""></div><p>Your beauty catches the eye,but your intelligence captures admiration</p></div>
   
   </div>
 </section>
 
-<!-- REASONS -->
-<section id="reasons">
-  <h2>Why You're Special</h2>
+<!-- BEHAVIOUR CARDS -->
+<section id="character">
+  <h2>The Way You Are</h2>
   <div class="divider">💖 ✿ 💖</div>
-  <div class="reasons">
-    <div class="reason"><span class="icon">😊</span><h3>Your Smile</h3></div>
-    <div class="reason"><span class="icon">🤝</span><h3>Always There</h3></div>
-    <div class="reason"><span class="icon">😂</span><h3>Makes Me Laugh</h3></div>
-    <div class="reason"><span class="icon">🌟</span><h3>Truly Unique</h3></div>
+  <div class="traits">
+    <div class="trait">
+      <span class="icon">📚</span>
+      <h3>Dedicated Learner</h3>
+      <p>You take your studies seriously and give them real care. Your focus and effort show in everything you do.</p>
+    </div>
+    <div class="trait">
+      <span class="icon">🌱</span>
+      <h3>Quietly Consistent</h3>
+      <p>You don't need noise or attention to make progress. Small, steady steps every day are how you grow.</p>
+    </div>
+    <div class="trait">
+      <span class="icon">🕊️</span>
+      <h3>Grounded in Faith</h3>
+      <p>Your faith is a source of calm and direction for you, and you hold it humbly, without ever showing off.</p>
+    </div>
+    <div class="trait">
+      <span class="icon">🔍</span>
+      <h3>Curious Mind</h3>
+      <p>You are always eager to understand more. Your curiosity makes you thoughtful and always ready to learn.</p>
+    </div>
+    <div class="trait">
+      <span class="icon">💪</span>
+      <h3>Quiet Strength</h3>
+      <p>You stay steady and strong without making a show of it. That calm strength gives you real character.</p>
+    </div>
+    <div class="trait">
+      <span class="icon">🤍</span>
+      <h3>Humble &amp; Kind</h3>
+      <p>You treat people with respect and warmth. Being around you makes others feel comfortable and valued.</p>
+    </div>
   </div>
 </section>
 
